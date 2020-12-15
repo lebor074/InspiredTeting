@@ -1,0 +1,111 @@
+{
+	"id": "d65c2b2e-6932-425e-a8ed-30d0610e4b46",
+	"name": "InspiredTesting",
+	"timestamp": "2020-12-15T11:46:09.712Z",
+	"collection_id": "6950896a-3ade-41ce-88f1-0e0699836e64",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 3,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "e3089116-cbe9-4e40-ac05-0dd7f8873458",
+			"name": "Get10Users",
+			"url": "https://jsonplaceholder.typicode.com/users",
+			"time": 719,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Retrieved 10 users successfully with status code 200": true
+			},
+			"testPassFailCounts": {
+				"Retrieved 10 users successfully with status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				719
+			],
+			"allTests": [
+				{
+					"Retrieved 10 users successfully with status code 200": true
+				}
+			]
+		},
+		{
+			"id": "bd8aec93-c203-4f07-ac80-315648e5fe46",
+			"name": "GetSpecificUser",
+			"url": "https://jsonplaceholder.typicode.com/users?id=3",
+			"time": 380,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Retrieved specific user successfully with status code 200": true
+			},
+			"testPassFailCounts": {
+				"Retrieved specific user successfully with status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				380
+			],
+			"allTests": [
+				{
+					"Retrieved specific user successfully with status code 200": true
+				}
+			]
+		},
+		{
+			"id": "580df2b7-c84f-4f99-b0a2-39195dc522a8",
+			"name": "AddUser",
+			"url": "https://jsonplaceholder.typicode.com/posts?userId=1",
+			"time": 365,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Added user successfully with status code 201": true
+			},
+			"testPassFailCounts": {
+				"Added user successfully with status code 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				365
+			],
+			"allTests": [
+				{
+					"Added user successfully with status code 201": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1464,
+	"collection": {
+		"requests": [
+			{
+				"id": "e3089116-cbe9-4e40-ac05-0dd7f8873458",
+				"method": "GET"
+			},
+			{
+				"id": "bd8aec93-c203-4f07-ac80-315648e5fe46",
+				"method": "GET"
+			},
+			{
+				"id": "580df2b7-c84f-4f99-b0a2-39195dc522a8",
+				"method": "POST"
+			}
+		]
+	}
+}

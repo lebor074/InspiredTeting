@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "6950896a-3ade-41ce-88f1-0e0699836e64",
+		"name": "InspiredTesting",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get10Users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "91ab530d-c3a4-4e68-b55c-85dfa2f4c21c",
+						"exec": [
+							"pm.test(\"Retrieved 10 users successfully with status code 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/users",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSpecificUser",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1becfe0e-d71f-4ffe-8d99-e7d3f7166e92",
+						"exec": [
+							"pm.test(\"Retrieved specific user successfully with status code 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/users?id=3",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddUser",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "932c420a-4f2f-4ccc-9799-57c9f9b8c37c",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "164bc0fe-df59-476f-8c1b-65650dd94b67",
+						"exec": [
+							"pm.test(\"Added user successfully with status code 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"InspiredTesting\",\r\n    \"body\": \"Inspired Testing South Africa Assessment\",\r\n    \"userId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/posts?userId=1",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "289122da-934f-48c5-97e1-4cf86100ad42",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "2b8437fb-5e0c-4884-a97c-0a9ed6f03a47",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "b5ee9ca1-7530-452d-ab0b-628ac765293e",
+			"key": "baseurl",
+			"value": ""
+		}
+	],
+	"protocolProfileBehavior": {}
+}

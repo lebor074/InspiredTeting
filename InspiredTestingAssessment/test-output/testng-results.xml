@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="132048" started-at="2020-12-15T15:52:27 CAT" finished-at="2020-12-15T15:54:39 CAT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="132048" started-at="2020-12-15T15:52:27 CAT" finished-at="2020-12-15T15:54:39 CAT">
+      <class name="bankingapp.BankingTests">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:bankingapp.BankingTests@1dfe2924]" name="beforeTest" is-config="true" duration-ms="8868" started-at="2020-12-15T15:52:27 CAT" finished-at="2020-12-15T15:52:36 CAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bankingapp.BankingTests@1dfe2924]" name="beforeMethod" is-config="true" duration-ms="1828" started-at="2020-12-15T15:52:36 CAT" finished-at="2020-12-15T15:52:38 CAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="singleDeposit()[pri:1, instance:bankingapp.BankingTests@1dfe2924]" name="singleDeposit" duration-ms="996" started-at="2020-12-15T15:52:38 CAT" finished-at="2020-12-15T15:52:39 CAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- singleDeposit -->
+        <test-method status="PASS" signature="getTestResults(org.testng.ITestResult)[pri:0, instance:bankingapp.BankingTests@1dfe2924]" name="getTestResults" is-config="true" duration-ms="200" started-at="2020-12-15T15:52:39 CAT" finished-at="2020-12-15T15:52:39 CAT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=singleDeposit status=SUCCESS method=BankingTests.singleDeposit()[pri:1, instance:bankingapp.BankingTests@1dfe2924] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTestResults -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bankingapp.BankingTests@1dfe2924]" name="beforeMethod" is-config="true" duration-ms="551" started-at="2020-12-15T15:52:39 CAT" finished-at="2020-12-15T15:52:40 CAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="multiDeposits()[pri:2, instance:bankingapp.BankingTests@1dfe2924]" name="multiDeposits" duration-ms="2449" started-at="2020-12-15T15:52:40 CAT" finished-at="2020-12-15T15:52:42 CAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiDeposits -->
+        <test-method status="PASS" signature="getTestResults(org.testng.ITestResult)[pri:0, instance:bankingapp.BankingTests@1dfe2924]" name="getTestResults" is-config="true" duration-ms="192" started-at="2020-12-15T15:52:42 CAT" finished-at="2020-12-15T15:52:42 CAT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multiDeposits status=SUCCESS method=BankingTests.multiDeposits()[pri:2, instance:bankingapp.BankingTests@1dfe2924] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTestResults -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bankingapp.BankingTests@1dfe2924]" name="beforeMethod" is-config="true" duration-ms="532" started-at="2020-12-15T15:52:42 CAT" finished-at="2020-12-15T15:52:43 CAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="depositAndWithdraw()[pri:3, instance:bankingapp.BankingTests@1dfe2924]" name="depositAndWithdraw" duration-ms="114977" started-at="2020-12-15T15:52:43 CAT" finished-at="2020-12-15T15:54:38 CAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- depositAndWithdraw -->
+        <test-method status="PASS" signature="getTestResults(org.testng.ITestResult)[pri:0, instance:bankingapp.BankingTests@1dfe2924]" name="getTestResults" is-config="true" duration-ms="172" started-at="2020-12-15T15:54:38 CAT" finished-at="2020-12-15T15:54:38 CAT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=depositAndWithdraw status=SUCCESS method=BankingTests.depositAndWithdraw()[pri:3, instance:bankingapp.BankingTests@1dfe2924] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTestResults -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:bankingapp.BankingTests@1dfe2924]" name="afterTest" is-config="true" duration-ms="1231" started-at="2020-12-15T15:54:38 CAT" finished-at="2020-12-15T15:54:39 CAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- bankingapp.BankingTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
